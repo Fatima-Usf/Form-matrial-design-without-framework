@@ -1,0 +1,131 @@
+
+body{
+	background:url(image.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+.container{
+	
+	width: 30vw;
+	height: 600px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 2px 7px 13px #FCD48F;
+	overflow: hidden;
+}
+
+input{
+	background: none;
+	border: solid 2px #3497DA;
+	color: black;
+	padding: 15px 40px;
+	font-size: 16px;
+	display: block;
+
+
+}
+input:focus{
+	outline: none;
+}
+input:active{
+	outline: none;
+
+}
+input[type="text"],input[type="email"], input[type="password"]{
+	border: none;
+	border-bottom: solid 1px #999; 
+}
+
+
+input:focus, input:active {
+  outline: none;
+  border-bottom: solid 2px black;
+  font-size: 12px;
+}
+
+
+input[type=submit]{
+	
+color: white;
+background: #3497DA;
+	
+}
+fieldset{
+height: 70vh;
+}
+
+h2{
+	color:#3497DA;
+
+	text-align: center;
+}
+
+.input {
+	padding: 8px;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.input input{
+	padding: 15px 0px;
+}
+
+.input label{
+	position: absolute;
+	top:50%;
+	left:0px;
+   -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  font-size: 15px;
+  
+  font-family: monospace;
+	color: #3497DA;
+	pointer-events: none;
+ -webkit-transition: all 0.10s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+.input input:focus + label,
+.input input.has-value + label{
+	top:-0.15px;
+	font-size: 15px;
+	color:white;
+	
+}
+.button
+{
+	float: right;
+    margin-top:25%; 
+    box-shadow: 2px 5px 10px gray;
+    cursor: pointer;
+   text-align: center;
+   letter-spacing: .4px;
+   border-radius:4%;
+   
+}
+.button:hover{
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+.button:disabled{
+	background-color: gray;
+	
+	box-shadow: none;
+	border: gray;
+	pointer-events: none;
+}
+
+.chek {
+float: left;
+padding-bottom: 30px;
+}
+img{
+	padding: 20px 0px 0px 0px;
+	height: 25px;
+	float: left;
+	
+}

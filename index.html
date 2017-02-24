@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+			<title>Form</title>
+		    <meta charset="utf-8">
+		    <link rel="stylesheet" href="style.css">
+		    <script src="script.js"></script>
+		
+	</head>
+	<body>
+		<main class="container">
+			<h2>Register</h2>
+				
+			<form class="formulaire"  action="mailto:f.ucf.eva@gmail.com" method="post" enctype="text/plain" >
+				<fieldset><legend>Inscription</legend>
+
+					<img src="usr.png" alt="">
+					<div class="input">
+						<input onblur="verification(this)" required type="text" autocomplete="on" autofocus>
+					    <label>Username</label>
+					 </div>
+
+
+					<img src="email.png" alt="">
+					<div class="input">
+						<input onblur="verification(this)" required type="email"  autocomplete="on">
+						<label >Email</label>
+			        </div>
+
+			        <img src="pw.png" alt="">
+					<div class="input">
+						 <input onblur="verification(this)" required type="password" autocomplete="on">
+						 <label>Password</label>
+			        </div>
+			        
+
+				 	<p>
+		     		 <input class="chek"  type="checkbox" onchange="document.getElementById('le-bouton').disabled = !this.checked">
+		      		 <label >I accepte <a href="#"> the terme and condtion </a></label>
+		            </p>
+
+					
+					<input class="button" id="le-bouton" type="submit" value="Send "> 
+					
+					
+			 	</fieldset>
+	  		</form>
+   		</main>
+	</body>
+</html>
